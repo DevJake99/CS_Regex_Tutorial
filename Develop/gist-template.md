@@ -51,9 +51,10 @@ The components of this regular expression are as follows:
 
 
 ### Anchors
-Anchors are used to indicate where in the string a set of characters will be matched. Some common anchors used in regex are the '^' and '$' symbol. 
-The carot (^) points to the beggining of a string or line and is also written at the beggining of the expression, while  the dollar sign ($) points to the end of a string or line and is written at the end of the expression. For example, in our expression for email validator:
- /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/, the carot symbol is found at the start of the expression and indicates that a search for the first two components will start at the beggining of the string, while the dollar sign is found at the end of the expression, indicating the search for the third component must be matched at the end of the string. 
+Anchors are used to indicate where in the string a set of characters will be matched. Some common anchors used in regex are the '^' and '$' symbol. The carot (^) points to the beggining of a string or line and is also written at the beggining of the expression, while  the dollar sign ($) points to the end of a string or line and is written at the end of the expression. For example, in our expression for email validator:
+ /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/,
+
+ the carot symbol is found at the start of the expression and indicates that a search for the first two components will start at the beggining of the string, while the dollar sign is found at the end of the expression, indicating the search for the third component must be matched at the end of the string. 
 
 ### Quantifiers
 These sets of characters indicate the number of characters or expressions that will be natched. common quantifiers include: 
